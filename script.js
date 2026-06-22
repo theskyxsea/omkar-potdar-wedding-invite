@@ -34,7 +34,10 @@ function updateCountdown() {
 
   if (remaining <= 0) {
     timer.innerHTML = `       <div class="celebration">
-        🎉 Wedding Day Has Arrived!       </div>
+      <p>  🎉 विवाह दिनाच्या हार्दिक शुभेच्छा!</p>
+      <p> वधू-वरांस सुखी, समृद्ध व आनंदी वैवाहिक जीवनासाठी मनःपूर्वक शुभाशिर्वाद.  </p>  
+      <p> 🌸 ॥ नांदा सौख्यभरे ॥ 🌸 </p>
+</div>
     `;
     return;
   }
@@ -47,21 +50,21 @@ function updateCountdown() {
   const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
 
   timer.innerHTML = ` <div class="count-box">
-${days} <span>Days</span> </div>
+${days} <span>दिवस</span> </div>
 
 <div class="count-box">
   ${hours.toString().padStart(2, "0")}
-  <span>Hours</span>
+  <span>तास</span>
 </div>
 
 <div class="count-box">
   ${minutes.toString().padStart(2, "0")}
-  <span>Minutes</span>
+  <span>मिनिटे</span>
 </div>
 
 <div class="count-box">
   ${seconds.toString().padStart(2, "0")}
-  <span>Seconds</span>
+  <span>क्षण</span>
 </div>
 
 `;

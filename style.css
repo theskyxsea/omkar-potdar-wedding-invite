@@ -50,8 +50,10 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
+
+  padding-top: 64vh;
 
   color: white;
   text-align: center;
@@ -60,10 +62,7 @@ body {
 .overlay h1 {
   font-size: 4rem;
   margin-bottom: 10px;
-}
-
-.overlay p {
-  font-size: 1.3rem;
+  color: #c0392b;
 }
 
 .invite {
@@ -88,9 +87,9 @@ body {
 }
 
 .countdown {
+  color: #c0392b;
   text-align: center;
   padding: 80px 20px;
-  background: #fff;
 }
 
 #timer {
@@ -160,7 +159,6 @@ body {
 
 .count-box {
   min-width: 120px;
-  background: #fff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -180,7 +178,6 @@ body {
 .venue {
   padding: 40px 20px;
   text-align: center;
-  background: #fff;
 }
 
 .venue h2 {
@@ -206,22 +203,23 @@ body {
 .map-container iframe {
   display: block;
 }
-.family-section{
-    padding:80px 20px;
-    text-align:center;
-    background:#fdf4ec;
-    border-top:2px solid #e8d2bf;
+
+.family-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fdf4ec;
+  border-top: 2px solid #e8d2bf;
 }
 
-.family-section h2{
-    color:#c0392b;
-    margin-bottom:20px;
-    font-size:2rem;
+.family-section h2 {
+  color: #c0392b;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-.family-name{
-    font-size:2.2rem;
-    font-weight:600;
-    color:#7d3c0c;
-    margin-bottom:20px;
+.family-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #7d3c0c;
+  margin-bottom: 20px;
 }
